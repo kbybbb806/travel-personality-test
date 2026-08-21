@@ -126,6 +126,9 @@
 
   /* ---------- 结果页 ---------- */
   .result-hero{text-align:center;padding:20px 0 8px}
+  .r-art{width:280px;max-width:82%;margin:0 auto 12px}
+  .r-art svg{display:block;width:100%;height:auto;border-radius:16px;box-shadow:0 6px 18px rgba(90,70,40,.12)}
+  .r-art svg text{font-family:"PingFang SC","Microsoft YaHei",sans-serif}
   .stamp{
     display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,var(--sun),var(--sun-deep));
     color:#fff;font-size:34px;font-weight:800;letter-spacing:6px;padding:10px 28px;border-radius:18px;
@@ -268,6 +271,7 @@
   <!-- ================= 结果页 ================= -->
   <section id="view-result" class="view">
     <div class="result-hero">
+      <div id="rArt" class="r-art"></div>
       <div class="stamp" id="rCode">----</div>
       <div class="rname" id="rName"></div>
       <div class="rtag" id="rTag"></div>
@@ -320,6 +324,225 @@
   </section>
 
 </div>
+
+<!-- ============ 16 型旅行人格插画库（SVG symbol，按需引用） ============ -->
+<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true">
+  <defs>
+    <symbol id="tp-ESTJ" viewBox="0 0 240 160">
+      <rect width="240" height="160" fill="#fdf1e2"/>
+      <circle cx="120" cy="70" r="62" fill="#f6d9ae" opacity=".5"/>
+      <path d="M0 118 Q60 96 120 112 T240 108 V160 H0Z" fill="#efc78d" opacity=".55"/>
+      <rect x="88" y="64" width="64" height="42" rx="7" fill="#e8862e"/>
+      <rect x="106" y="57" width="28" height="9" rx="4.5" fill="#c96f22"/>
+      <circle cx="101" cy="110" r="5" fill="#c96f22"/><circle cx="139" cy="110" r="5" fill="#c96f22"/>
+      <path d="M94 74 L146 74 L143 85 L97 85Z" fill="#fff" opacity=".85"/>
+      <path d="M100 78 L128 78 M100 82 L118 82" stroke="#e8862e" stroke-width="2"/>
+      <rect x="86" y="134" width="68" height="20" rx="10" fill="#e8862e"/>
+      <text x="120" y="148" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">ESTJ</text>
+    </symbol>
+    <symbol id="tp-ESTP" viewBox="0 0 240 160">
+      <rect width="240" height="160" fill="#fdeae5"/>
+      <circle cx="120" cy="72" r="60" fill="#f7c9c0" opacity=".5"/>
+      <path d="M0 122 Q50 106 110 118 T240 116 V160 H0Z" fill="#f0ae9f" opacity=".5"/>
+      <path d="M52 118 Q80 92 116 100 Q142 106 148 116Z" fill="#e8c36a"/>
+      <ellipse cx="104" cy="92" rx="34" ry="9" fill="#e2574c"/>
+      <path d="M84 90 q20 -18 40 0 q-20 -10 -40 0Z" fill="#c74a41"/>
+      <rect x="158" y="78" width="14" height="34" rx="7" fill="#3f9d7a"/>
+      <path d="M166 86 h14 q10 0 10 10 q0 10 -10 10 h-6" fill="none" stroke="#3f9d7a" stroke-width="7" stroke-linecap="round"/>
+      <rect x="86" y="134" width="68" height="20" rx="10" fill="#e2574c"/>
+      <text x="120" y="148" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">ESTP</text>
+    </symbol>
+    <symbol id="tp-ESFJ" viewBox="0 0 240 160">
+      <rect width="240" height="160" fill="#fdeef1"/>
+      <circle cx="120" cy="70" r="60" fill="#f8d3da" opacity=".5"/>
+      <path d="M0 118 Q60 98 120 112 T240 110 V160 H0Z" fill="#f2b9c3" opacity=".5"/>
+      <path d="M120 78 c-12 -14 -30 -10 -30 2 c0 10 12 16 30 26 c18 -10 30 -16 30 -26 c0 -12 -18 -16 -30 -2Z" fill="#e87a90"/>
+      <path d="M88 60 h48 v26 l-10 -9 h-38Z" fill="#fff" opacity=".9"/>
+      <path d="M88 60 v-5" stroke="#b9596f" stroke-width="4"/>
+      <circle cx="60" cy="104" r="9" fill="#e87a90"/><circle cx="120" cy="106" r="11" fill="#d96a8b"/><circle cx="178" cy="102" r="8" fill="#f094a6"/>
+      <rect x="86" y="134" width="68" height="20" rx="10" fill="#e87a90"/>
+      <text x="120" y="148" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">ESFJ</text>
+    </symbol>
+    <symbol id="tp-ESFP" viewBox="0 0 240 160">
+      <rect width="240" height="160" fill="#fdf4e2"/>
+      <circle cx="120" cy="72" r="60" fill="#f8dfae" opacity=".5"/>
+      <path d="M0 120 Q60 100 120 114 T240 112 V160 H0Z" fill="#f2cd8a" opacity=".55"/>
+      <ellipse cx="92" cy="72" rx="17" ry="21" fill="#f0a63c"/>
+      <ellipse cx="132" cy="60" rx="15" ry="19" fill="#e2574c"/>
+      <ellipse cx="168" cy="76" rx="14" ry="18" fill="#8a63d2"/>
+      <path d="M92 93 q-2 14 -8 18 M132 79 q-2 12 -8 16 M168 94 q2 10 6 14" stroke="#b98a3c" stroke-width="2" fill="none"/>
+      <path d="M58 104 a8 8 0 1 0 6 14 l14 -10Z" fill="#3f9d7a"/>
+      <path d="M64 118 v-14" stroke="#3f9d7a" stroke-width="3"/>
+      <rect x="86" y="134" width="68" height="20" rx="10" fill="#f0a63c"/>
+      <text x="120" y="148" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">ESFP</text>
+    </symbol>
+    <symbol id="tp-ENTJ" viewBox="0 0 240 160">
+      <rect width="240" height="160" fill="#eaf0fb"/>
+      <circle cx="120" cy="70" r="60" fill="#c9d8f2" opacity=".55"/>
+      <path d="M70 96 L96 56 L120 88 L104 96Z" fill="#3b6fd4"/>
+      <path d="M96 56 L120 88 L108 92Z" fill="#fff" opacity=".8"/>
+      <path d="M150 92 L172 60 L196 92Z" fill="#2f5cb4"/>
+      <circle cx="120" cy="112" r="26" fill="#fff"/>
+      <circle cx="120" cy="112" r="20" fill="none" stroke="#3b6fd4" stroke-width="3"/>
+      <path d="M120 94 v-6 M120 130 v-6 M106 112 h-6 M134 112 h6" stroke="#3b6fd4" stroke-width="3"/>
+      <path d="M120 112 L120 102 L127 112Z" fill="#e2574c"/>
+      <rect x="86" y="136" width="68" height="20" rx="10" fill="#3b6fd4"/>
+      <text x="120" y="150" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">ENTJ</text>
+    </symbol>
+    <symbol id="tp-ENTP" viewBox="0 0 240 160">
+      <rect width="240" height="160" fill="#e9f6f0"/>
+      <circle cx="120" cy="70" r="60" fill="#c4e6d7" opacity=".55"/>
+      <path d="M0 116 Q60 100 120 112 T240 110 V160 H0Z" fill="#a9d8c4" opacity=".5"/>
+      <path d="M120 38 q-26 22 -26 46 a26 26 0 0 0 52 0 q0 -24 -26 -46Z" fill="#2f9e77"/>
+      <path d="M120 60 q-14 8 -14 24 a14 14 0 0 0 28 0 q0 -16 -14 -24Z" fill="#e9f6f0" opacity=".55"/>
+      <rect x="113" y="84" width="14" height="12" rx="3" fill="#a3642f"/>
+      <path d="M113 96 l7 14 l7 -14Z" fill="#2f9e77"/>
+      <path d="M120 98 v18" stroke="#8a63d2" stroke-width="2" stroke-dasharray="3 3"/>
+      <circle cx="86" cy="44" r="9" fill="#fff" opacity=".9"/>
+      <circle cx="92" cy="40" r="7" fill="#fff" opacity=".6"/>
+      <circle cx="162" cy="56" r="8" fill="#fff" opacity=".8"/>
+      <rect x="86" y="134" width="68" height="20" rx="10" fill="#2f9e77"/>
+      <text x="120" y="148" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">ENTP</text>
+    </symbol>
+    <symbol id="tp-ENFJ" viewBox="0 0 240 160">
+      <rect width="240" height="160" fill="#f1ecfa"/>
+      <circle cx="120" cy="70" r="60" fill="#ddd1f2" opacity=".55"/>
+      <path d="M0 116 Q60 100 120 112 T240 108 V160 H0Z" fill="#c9b6e8" opacity=".5"/>
+      <path d="M104 128 L112 64 h16 l8 64Z" fill="#8a63d2"/>
+      <rect x="108" y="52" width="24" height="14" rx="4" fill="#f0a63c"/>
+      <path d="M120 38 v12" stroke="#f0a63c" stroke-width="4"/>
+      <path d="M120 56 L56 92 L120 84 Z" fill="#ffd98a" opacity=".7"/>
+      <path d="M120 56 L184 92 L120 84 Z" fill="#ffd98a" opacity=".45"/>
+      <path d="M98 106 h44 v22 h-44Z" fill="#6d4fae"/>
+      <rect x="86" y="134" width="68" height="20" rx="10" fill="#8a63d2"/>
+      <text x="120" y="148" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">ENFJ</text>
+    </symbol>
+    <symbol id="tp-ENFP" viewBox="0 0 240 160">
+      <rect width="240" height="160" fill="#eaf4fb"/>
+      <circle cx="120" cy="70" r="60" fill="#cbe4f2" opacity=".55"/>
+      <path d="M0 118 Q60 98 120 112 T240 110 V160 H0Z" fill="#aed2e8" opacity=".5"/>
+      <path d="M170 44 a16 16 0 1 1 2 -30 a13 13 0 0 1 2 30Z" fill="#ffd98a"/>
+      <path d="M70 96 L150 64 L118 102 L84 110 Z" fill="#58a8d8"/>
+      <path d="M118 102 L150 64 L112 86Z" fill="#3f8fc0"/>
+      <path d="M150 64 L144 74 L112 86 L118 102Z" fill="#fff" opacity=".4"/>
+      <circle cx="64" cy="60" r="10" fill="#fff"/><circle cx="78" cy="52" r="12" fill="#fff"/><circle cx="92" cy="60" r="9" fill="#fff"/>
+      <path d="M120 110 q14 -8 28 -2" stroke="#8ec8e8" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <rect x="86" y="134" width="68" height="20" rx="10" fill="#58a8d8"/>
+      <text x="120" y="148" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">ENFP</text>
+    </symbol>
+    <symbol id="tp-ISTJ" viewBox="0 0 240 160">
+      <rect width="240" height="160" fill="#eef2f6"/>
+      <circle cx="120" cy="70" r="60" fill="#d3dde8" opacity=".55"/>
+      <path d="M0 118 Q60 102 120 114 T240 112 V160 H0Z" fill="#b9c6d4" opacity=".55"/>
+      <rect x="64" y="70" width="112" height="40" rx="8" fill="#5d7a9e"/>
+      <rect x="64" y="66" width="112" height="8" rx="4" fill="#4a6384"/>
+      <rect x="60" y="76" width="8" height="34" rx="3" fill="#46597a"/>
+      <circle cx="88" cy="96" r="8" fill="#fff"/><circle cx="122" cy="96" r="8" fill="#fff"/><circle cx="156" cy="96" r="8" fill="#fff"/>
+      <circle cx="88" cy="96" r="4" fill="#5d7a9e"/><circle cx="122" cy="96" r="4" fill="#5d7a9e"/><circle cx="156" cy="96" r="4" fill="#5d7a9e"/>
+      <circle cx="84" cy="116" r="9" fill="#46597a"/><circle cx="156" cy="116" r="9" fill="#46597a"/>
+      <circle cx="84" cy="116" r="4" fill="#fff" opacity=".5"/><circle cx="156" cy="116" r="4" fill="#fff" opacity=".5"/>
+      <path d="M84 82 h72 M84 87 h60" stroke="#fff" opacity=".6" stroke-width="2"/>
+      <rect x="86" y="134" width="68" height="20" rx="10" fill="#5d7a9e"/>
+      <text x="120" y="148" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">ISTJ</text>
+    </symbol>
+    <symbol id="tp-ISTP" viewBox="0 0 240 160">
+      <rect width="240" height="160" fill="#f0f5ea"/>
+      <circle cx="120" cy="70" r="60" fill="#d9e6c9" opacity=".55"/>
+      <path d="M0 120 Q60 100 120 114 T240 112 V160 H0Z" fill="#c0d4a8" opacity=".55"/>
+      <circle cx="84" cy="96" r="16" fill="none" stroke="#6b8f4e" stroke-width="5"/>
+      <circle cx="156" cy="96" r="16" fill="none" stroke="#6b8f4e" stroke-width="5"/>
+      <circle cx="84" cy="96" r="5" fill="#8fb26e"/><circle cx="156" cy="96" r="5" fill="#8fb26e"/>
+      <path d="M84 96 L120 74 L156 96" fill="none" stroke="#4f6e38" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M120 74 L120 58 M120 58 h16 q6 0 10 6" fill="none" stroke="#4f6e38" stroke-width="4" stroke-linecap="round"/>
+      <path d="M104 74 L84 96 M120 96 L104 74 M120 96 L136 82" fill="none" stroke="#6b8f4e" stroke-width="4" stroke-linecap="round"/>
+      <path d="M146 84 L156 96" stroke="#6b8f4e" stroke-width="4"/>
+      <rect x="86" y="134" width="68" height="20" rx="10" fill="#6b8f4e"/>
+      <text x="120" y="148" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">ISTP</text>
+    </symbol>
+    <symbol id="tp-ISFJ" viewBox="0 0 240 160">
+      <rect width="240" height="160" fill="#eef4f8"/>
+      <circle cx="120" cy="70" r="60" fill="#d8e6ef" opacity=".55"/>
+      <path d="M0 120 Q60 100 120 112 T240 114 V160 H0Z" fill="#bcd4e2" opacity=".55"/>
+      <rect x="88" y="78" width="64" height="36" rx="4" fill="#7fa8c9"/>
+      <path d="M80 80 L120 52 L160 80Z" fill="#5d84a5"/>
+      <rect x="112" y="94" width="16" height="20" rx="2" fill="#f0a63c"/>
+      <rect x="140" y="62" width="7" height="16" rx="3" fill="#5d84a5"/>
+      <path d="M143 62 q10 -4 6 -12 q8 -2 12 6 q-10 4 -18 6Z" fill="#fff" opacity=".85"/>
+      <circle cx="62" cy="100" r="7" fill="#e87a90"/><circle cx="62" cy="100" r="3" fill="#ffd98a"/>
+      <path d="M62 107 v8 M58 103 h8" stroke="#3f9d7a" stroke-width="3"/>
+      <rect x="86" y="134" width="68" height="20" rx="10" fill="#7fa8c9"/>
+      <text x="120" y="148" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">ISFJ</text>
+    </symbol>
+    <symbol id="tp-ISFP" viewBox="0 0 240 160">
+      <rect width="240" height="160" fill="#f6f1fb"/>
+      <circle cx="120" cy="70" r="60" fill="#e6d8f4" opacity=".55"/>
+      <path d="M0 118 Q60 100 120 112 T240 110 V160 H0Z" fill="#d2bce8" opacity=".5"/>
+      <rect x="94" y="52" width="52" height="42" rx="3" fill="#fff"/>
+      <path d="M92 64 L48 86 L92 94Z" fill="#b087d9" opacity=".85"/>
+      <path d="M92 64 L96 52 L138 50 L146 66Z" fill="#6d4fae"/>
+      <path d="M94 62 L112 76 L126 66Z" fill="#e87a90"/>
+      <circle cx="66" cy="112" r="4" fill="#e2574c"/><circle cx="78" cy="116" r="4" fill="#f0a63c"/><circle cx="90" cy="112" r="4" fill="#3f9d7a"/><circle cx="80" cy="108" r="4" fill="#58a8d8"/>
+      <path d="M58 70 q-10 8 -2 16" stroke="#6d4fae" stroke-width="2" fill="none"/>
+      <rect x="86" y="134" width="68" height="20" rx="10" fill="#b087d9"/>
+      <text x="120" y="148" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">ISFP</text>
+    </symbol>
+    <symbol id="tp-INTJ" viewBox="0 0 240 160">
+      <rect width="240" height="160" fill="#edf0f6"/>
+      <circle cx="120" cy="70" r="60" fill="#d3d9e8" opacity=".55"/>
+      <path d="M56 96 L84 54 L108 92 L118 70 L132 92 L158 58 L186 96 Q120 112 56 96Z" fill="#4a5c8a" opacity=".7"/>
+      <path d="M84 54 L108 92 L96 96Z" fill="#fff" opacity=".8"/>
+      <path d="M132 92 L118 70 L128 68 L140 92Z" fill="#fff" opacity=".7"/>
+      <path d="M104 118 L136 118 L120 96Z" fill="#2f3d63"/>
+      <path d="M116 112 h8 v8 h-8Z" fill="#ffd98a"/>
+      <path d="M64 118 q10 -4 20 0 M156 118 q10 -4 20 0" stroke="#fff" opacity=".6" stroke-width="2" fill="none"/>
+      <rect x="86" y="134" width="68" height="20" rx="10" fill="#4a5c8a"/>
+      <text x="120" y="148" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">INTJ</text>
+    </symbol>
+    <symbol id="tp-INTP" viewBox="0 0 240 160">
+      <rect width="240" height="160" fill="#eceff6"/>
+      <circle cx="120" cy="70" r="60" fill="#d2d8ea" opacity=".55"/>
+      <path d="M0 118 Q60 100 120 112 T240 112 V160 H0Z" fill="#b8c1da" opacity=".5"/>
+      <path d="M96 74 L168 54" stroke="#3e4c78" stroke-width="8" stroke-linecap="round"/>
+      <circle cx="172" cy="53" r="10" fill="#3e4c78"/>
+      <circle cx="172" cy="53" r="4" fill="#8fb2e8"/>
+      <rect x="88" y="68" width="14" height="14" rx="3" fill="#3e4c78"/>
+      <path d="M98 82 L110 100 M104 100 L118 84 M92 88 L84 102" stroke="#3e4c78" stroke-width="3" stroke-linecap="round"/>
+      <path d="M60 50 l3 7 l7 3 l-7 3 l-3 7 l-3 -7 l-7 -3 l7 -3Z" fill="#ffd98a"/>
+      <path d="M156 30 l2 5 l5 2 l-5 2 l-2 5 l-2 -5 l-5 -2 l5 -2Z" fill="#ffd98a" opacity=".8"/>
+      <path d="M196 70 l2 5 l5 2 l-5 2 l-2 5 l-2 -5 l-5 -2 l5 -2Z" fill="#ffd98a" opacity=".7"/>
+      <rect x="86" y="134" width="68" height="20" rx="10" fill="#3e4c78"/>
+      <text x="120" y="148" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">INTP</text>
+    </symbol>
+    <symbol id="tp-INFJ" viewBox="0 0 240 160">
+      <rect width="240" height="160" fill="#f0edf8"/>
+      <circle cx="120" cy="70" r="60" fill="#ddd5ef" opacity=".55"/>
+      <path d="M0 118 Q60 100 120 112 T240 112 V160 H0Z" fill="#c8bce2" opacity=".5"/>
+      <path d="M76 62 h88 v66 h-88Z" fill="#6d5a9e"/>
+      <path d="M92 62 a28 28 0 0 1 56 0Z" fill="#f0edf8"/>
+      <path d="M84 74 h72 M84 84 h72 M84 94 h72 M84 104 h72 M84 114 h72" stroke="#6d5a9e" stroke-width="3"/>
+      <path d="M120 108 v-22" stroke="#e8c36a" stroke-width="4"/>
+      <path d="M120 84 q6 8 0 12 q-6 -4 0 -12Z" fill="#f0a63c"/>
+      <path d="M120 76 q4 5 0 8 q-4 -3 0 -8Z" fill="#ffd98a"/>
+      <rect x="86" y="134" width="68" height="20" rx="10" fill="#6d5a9e"/>
+      <text x="120" y="148" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">INFJ</text>
+    </symbol>
+    <symbol id="tp-INFP" viewBox="0 0 240 160">
+      <rect width="240" height="160" fill="#f0eefb"/>
+      <circle cx="120" cy="70" r="60" fill="#dcd5f0" opacity=".55"/>
+      <path d="M170 52 a16 16 0 1 1 2 -28 a13 13 0 0 1 -2 28Z" fill="#f2c94c"/>
+      <path d="M0 116 Q60 96 120 108 T240 106 L240 160 L0 160Z" fill="#7c6bb5" opacity=".55"/>
+      <ellipse cx="120" cy="118" rx="60" ry="20" fill="#7c6bb5" opacity=".35"/>
+      <path d="M120 98 q10 6 24 5" stroke="#fff" opacity=".6" stroke-width="2" fill="none"/>
+      <path d="M96 102 q-8 -2 -14 0" stroke="#fff" opacity=".4" stroke-width="2" fill="none"/>
+      <path d="M150 100 q8 -2 14 0" stroke="#fff" opacity=".4" stroke-width="2" fill="none"/>
+      <path d="M62 44 l3 6 l6 3 l-6 3 l-3 6 l-3 -6 l-6 -3 l6 -3Z" fill="#f2c94c"/>
+      <path d="M188 30 l2 5 l5 2 l-5 2 l-2 5 l-2 -5 l-5 -2 l5 -2Z" fill="#f2c94c" opacity=".8"/>
+      <path d="M52 84 l2 4 l4 2 l-4 2 l-2 4 l-2 -4 l-4 -2 l4 -2Z" fill="#f2c94c" opacity=".7"/>
+      <rect x="86" y="134" width="68" height="20" rx="10" fill="#7c6bb5"/>
+      <text x="120" y="148" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">INFP</text>
+    </symbol>
+  </defs>
+</svg>
 
 <script>
 /* ================================================================
@@ -661,6 +884,7 @@ function showResult(){
   const { code, scores } = computeResult();
   const type = TYPES[code];
 
+  renderArt(code);
   // 字母徽章
   document.getElementById('rCode').textContent = code;
   document.getElementById('rName').textContent = type.emoji + ' ' + code + ' · ' + type.name;
@@ -713,6 +937,13 @@ function fillList(id, arr){
   });
 }
 
+/* 渲染类型插画（引用隐藏 SVG symbol 库） */
+function renderArt(code){
+  const el = document.getElementById('rArt');
+  if (!el || !TYPES[code]) return;
+  el.innerHTML = '<svg viewBox="0 0 240 160" role="img" aria-label="' + code + '"><use href="#tp-' + code + '" xlink:href="#tp-' + code + '"/></svg>';
+}
+
 /* ================================================================
  * 历史记录（localStorage）
  * ================================================================ */
@@ -757,6 +988,7 @@ function renderHistory(){
 function showOldResult(code){
   const type = TYPES[code];
   if (!type) return;
+  renderArt(code);
   // 重建一个模拟的分数展示（历史记录仅保留类型，不保留每题答案）
   const hist = getHistory();
   const barsBox = document.getElementById('barsBox');
